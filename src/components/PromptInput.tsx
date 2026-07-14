@@ -52,6 +52,7 @@ export function PromptInput({ onGenerate, isLoading, history = [] }: PromptInput
               }
             }}
           />
+          <div className="prompt-char-count">{prompt.length}자</div>
         </div>
         <button
           type="submit"
