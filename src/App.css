@@ -418,6 +418,15 @@
   color: var(--ink-soft);
 }
 
+.prompt-char-count {
+  margin-top: 6px;
+  padding-right: 4px;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-align: right;
+}
+
 .btn-generate {
   height: 52px;
   padding: 0 24px;
