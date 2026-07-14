@@ -802,6 +802,42 @@
   font-weight: 700;
 }
 
+.viewport-toggle {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  padding: 3px;
+  background: var(--desk);
+  border: 1px solid var(--wire);
+  border-radius: 8px;
+}
+
+.viewport-btn {
+  min-height: 26px;
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--ink-muted);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  transition:
+    background 0.16s ease,
+    color 0.16s ease;
+}
+
+.viewport-btn:hover {
+  color: var(--ink);
+}
+
+.viewport-btn--active {
+  background: var(--paper);
+  color: var(--ochre-text);
+  box-shadow: var(--shadow-sm);
+}
+
 .preview-content {
   padding: 18px;
   background: var(--paper);
@@ -820,6 +856,17 @@
   background-size: 28px 28px;
   border: 1px solid var(--wire);
   border-radius: 10px;
+}
+
+.preview-frame {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid var(--wire-strong);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  overflow: auto;
 }
 
 .preview-error {
