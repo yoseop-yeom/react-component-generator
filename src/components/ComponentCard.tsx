@@ -15,7 +15,7 @@ type Tab = 'preview' | 'code';
 export function ComponentCard({ component, onRemove, onRegenerate, isLoading }: ComponentCardProps) {
   const [activeTab, setActiveTab] = useState<Tab>('preview');
   const [previewKey, setPreviewKey] = useState(0);
-  const createdAt = component.createdAt.toLocaleTimeString('ko-KR', {
+  const createdAt = new Date(component.createdAt).toLocaleTimeString('ko-KR', {
     hour: '2-digit',
     minute: '2-digit',
   });
